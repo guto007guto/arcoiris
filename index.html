@@ -5,54 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supermercado Arco-Íris</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background-color: #000;
-      font-family: Arial, sans-serif;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
       text-align: center;
       padding: 20px;
     }
-    header {
-      margin-top: 20px;
-    }
+
     header img {
-      max-width: 300px;
-      width: 90%;
-    }
-    h1 {
-      color: #00ff99;
-      font-size: 2.5em;
-      margin: 20px 0 10px;
-    }
-    p {
-      color: #ccc;
-      font-size: 1.1em;
-      max-width: 800px;
-      margin: auto;
-    }
-    .lojas {
-      margin-top: 40px;
-    }
-    .loja {
-      background-color: #111;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
-    }
-    .loja h2 {
-      color: #ff6666;
+      max-width: 250px;
+      width: 100%;
       margin-bottom: 10px;
     }
-    .loja p {
-      margin: 5px 0;
+
+    h1 {
+      font-size: 2.8rem;
+      color: #00ffd0;
+      margin: 0;
     }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cfcfcf;
+      max-width: 800px;
+      margin: 15px auto;
+    }
+
+    .lojas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .loja {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 300px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .loja:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .loja h2 {
+      color: #ff8080;
+      margin-bottom: 10px;
+    }
+
+    .loja p {
+      margin: 6px 0;
+      color: #ddd;
+    }
+
     footer {
       margin-top: 50px;
       font-size: 0.9em;
-      color: #777;
+      color: #ccc;
+    }
+
+    @media (max-width: 640px) {
+      .lojas {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -61,7 +90,7 @@
     <img src="arcoirislogo.jpeg" alt="Logo Supermercado Arco-Íris" />
     <h1>Supermercado Arco-Íris</h1>
     <p>
-      Excelência em qualidade, variedade e atendimento. O Supermercado Arco-Íris é referência na região, sempre buscando oferecer o melhor para seus clientes. Um exemplo de comprometimento com a satisfação de quem confia na gente todos os dias.
+      Excelência em qualidade, variedade e atendimento. Referência na região, o Supermercado Arco-Íris oferece os melhores produtos, sempre com foco na satisfação do cliente.
     </p>
   </header>
 
