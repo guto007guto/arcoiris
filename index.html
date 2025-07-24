@@ -81,11 +81,44 @@
       margin-top: 10px;
       font-size: 0.8em;
       color: #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .creditos img {
+      height: 16px;
+      vertical-align: middle;
+      opacity: 0.8;
     }
 
     .creditos a {
       color: #aaa;
       text-decoration: none;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 30px;
+      z-index: 1000;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
     }
 
     @media (max-width: 640px) {
@@ -95,6 +128,9 @@
       }
     }
   </style>
+
+  <!-- Ícone do WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -124,8 +160,20 @@
   <footer>
     &copy; 2025 Supermercado Arco-Íris. Todos os direitos reservados.
     <div class="creditos">
-      Desenvolvido por <strong>Infopoços.TI</strong> — <a href="https://www.infopocos.com.br" target="_blank">www.infopocos.com.br</a>
+      Desenvolvido por <strong>Infopoços.TI</strong>
+      <img src="logoti.png" alt="Logo Infopoços TI" />
+      <a href="https://www.infopocos.com.br" target="_blank">www.infopocos.com.br</a>
     </div>
   </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a
+    href="https://wa.me/5535988410160"
+    class="whatsapp-button"
+    target="_blank"
+    title="Fale conosco no WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
